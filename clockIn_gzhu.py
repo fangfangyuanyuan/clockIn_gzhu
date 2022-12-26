@@ -35,8 +35,8 @@ class clockIn():
             ["ignore-certificate-errors", "enable-automation"])
 
         self.driver = selenium.webdriver.Chrome(options=options)
-        self.wdwait = WebDriverWait(self.driver, 30)
-        self.titlewait = WebDriverWait(self.driver, 5)
+        self.wdwait = WebDriverWait(self.driver, 60)
+        self.titlewait = WebDriverWait(self.driver, 10)
 
         # self.page用来表示当前页面标题，0表示初始页面
         self.page = 0
